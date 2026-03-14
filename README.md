@@ -113,6 +113,31 @@ typing checks, just run `make check` before committing to make sure your code is
 Remember to test your code! You'll find a tests folder with helpers, and you can run
 tests using `make test` command.
 
+### Connect your local clone to GitHub
+If you want to keep coding in this repository and push your updates to GitHub:
+
+1. Fork this repository on GitHub.
+2. Check your current remotes:
+   ```bash
+   git remote -v
+   ```
+3. Add your fork as `origin` (or update it if it already exists):
+   ```bash
+   git remote set-url origin https://github.com/<your-user>/privateGPT.git
+   ```
+4. Keep the original repository as `upstream` to receive updates:
+   ```bash
+   git remote add upstream https://github.com/imartinez/privateGPT.git
+   ```
+5. Create a branch, commit, and push:
+   ```bash
+   git checkout -b feat/my-update
+   git add .
+   git commit -m "Describe your change"
+   git push -u origin feat/my-update
+   ```
+6. Open a Pull Request from your branch in your fork to the target repository.
+
 Don't know what to contribute? Here is the public 
 [Project Board](https://github.com/users/imartinez/projects/3) with several ideas. 
 
